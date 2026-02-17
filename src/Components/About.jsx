@@ -8,7 +8,7 @@ import { Phone, Mail, MapPin } from "react-feather";
 function About() {
   const handlePhoneClick = (e) => {
     e.preventDefault();
-    window.location.href = "tel:+9490310214";
+    window.location.href = "tel:+91 8333940011";
   };
 
   const handleLocationClick = (e) => {

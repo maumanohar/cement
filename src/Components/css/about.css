@@ -96,15 +96,8 @@
 }
 
 .contact-container {
-  /* width: 100%;
-  min-height: 100vh; */
-  /* background: #f4f7fb;
-  padding: 60px 20px;
-  display: flex; */
- /* align-items: center; */
-  /* align-items: flex-start; */
   margin-top: 10px;
-  /* margin-left: 200px; */
+
 }
 
 .contact-wrapper.single-container {
@@ -148,6 +141,7 @@
   padding: 30px;
   text-align: center;
   border: 1px solid #e6eef8;
+  justify-items: center;
 }
 
 .profile-image {

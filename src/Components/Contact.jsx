@@ -28,7 +28,7 @@ function Contact() {
     console.log(dataToSend);
     
     try {
-      const response = await fetch("http://192.168.0.9:8080/submit", {
+      const response = await fetch("http://192.168.0.24:8080/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
