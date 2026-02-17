@@ -1,0 +1,109 @@
+
+.anjini-banner {
+  background-image: url("../../assets/Anjini_Banner.png");
+  min-height: 75vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+.anjini-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.55)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+.anjini-overlay h1 {
+  font-size: clamp(24px, 5vw, 52px);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeUp 1.2s ease;
+}
+
+
+
+.anjini-overlay p {
+  font-size: clamp(15px, 2.5vw, 22px);
+  margin-bottom: 30px;
+  max-width: 750px;
+  width: 90%;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeUp 1.5s ease;
+}
+
+
+
+.anjini-overlay .btn {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #ff6b00, #ffb347);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.anjini-overlay .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.4);
+}
+
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .anjini-banner {
+    min-height: 60vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .anjini-banner {
+    min-height: 70vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .anjini-overlay p {
+    max-width: 900px;
+  }
+}
