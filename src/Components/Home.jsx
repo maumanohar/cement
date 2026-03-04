@@ -9,6 +9,7 @@ import ramco from "../assets/All_Cements.png";
 import steellll from "../assets/Steel_5.png";
 import cement from "../assets/Cement_1.png";
 import anjini_2 from "../assets/All_Tiles.png";
+import Locations from "./Locations";
 
 const Home = () => {
 const navigate = useNavigate();
@@ -17,8 +18,7 @@ const navigate = useNavigate();
     { name: "Cements", image: ramco },
     { name: "Steels", image: steellll },
     { name: "Cement Bricks", image: cement },
-    { name: "Anjini Tek Tiles", image: anjini_2 },
-    
+    { name: "Anjini Tek Tiles", image: anjini_2 },   
   ];
 
   return (
@@ -53,8 +53,10 @@ const navigate = useNavigate();
 
 
       <BrandsSlider />
+      <Locations/>
       <Tiles />
       <InfoBar />
+
       <section className="stats">
         <div className="stat">
           <h3>5+</h3>

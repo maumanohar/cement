@@ -65,23 +65,23 @@ function About() {
 
           <div className="profile-card">
             <img
-              src={require("../assets/Pavan_pic.png")}
+              src={require("../assets/Owner.jpg")}
               alt="Balaram Steel & Cement Owner"
               className="profile-image"
             />
 
             <div className="profile-details">
-              <h3 className="profile-name">Mr. Ch. Praneeth Kumar</h3>
+              <h3 className="profile-name">Mr. Ch. Venkateswarulu</h3>
               <p className="profile-role">
                 Owner – Balaram Cement & Steel
               </p>
               <p className="profile-role">
-                Profession - Anjani Tiles Sales Executive
+                Profession - Anjini Cement Dealer 
               </p>
               <p className="profile-experience">
-                Over <strong>5+ years</strong> of experience in steel, cement,
+                Over <strong>25+ years</strong> of experience in steel, cement,
                 and tiles supply, providing quality materials and trusted
-                service to customers in and around Srikalahasti.
+                service to customers in and around Srikalahasti and Tirupati.
               </p>
             </div>
           </div>

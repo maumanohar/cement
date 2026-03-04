@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import InfoBar from "./Infobar";
 
 function Contact() {
+  const [loading,setLoading] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -19,6 +20,7 @@ function Contact() {
   };
 
     const handleSubmit = async (e) => {
+      setLoading(true);
      e.preventDefault();
     
     const dataToSend = {
@@ -28,7 +30,7 @@ function Contact() {
     console.log(dataToSend);
     
     try {
-      const response = await fetch("http://192.168.0.24:8080/submit", {
+      const response = await fetch("http://localhost:8080/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,6 +39,7 @@ function Contact() {
       });
 
       if (response.ok) {
+        setLoading(false);
         alert("Form submitted successfully!");
         setFormData({
           fullName: "",
@@ -46,9 +49,11 @@ function Contact() {
           message: "",
         });
       } else {
+        setLoading(false);
         alert("Failed to submit form");
       }
     } catch (error) {
+      setLoading(false);
       console.error("Error submitting form:", error);
       alert("Server error");
     }
@@ -69,6 +74,7 @@ function Contact() {
                   placeholder="Full name"
                   value={formData.fullName}
                   onChange={handleChange}
+                  
                   required
                 />
                 <input
@@ -108,7 +114,9 @@ function Contact() {
                 required
               ></textarea>
 
-              <button type="submit">REGISTER</button>
+              <button type="submit">
+               { loading ? "Loading..." : "Registration"}
+              </button>
             </form>
           </div>
         </div>

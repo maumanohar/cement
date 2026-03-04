@@ -1,0 +1,164 @@
+
+
+.locations-section {
+  padding: 70px 20px;
+  background: linear-gradient(to right, #f8f9fa, #eef2f7);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 17px;
+}
+
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+
+.location-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cement .card-header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.tiles .card-header {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.steel .card-header {
+  background: linear-gradient(135deg, #dc3545, #a71d2a);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  font-size: 14px;
+}
+
+.card-body li:last-child {
+  border-bottom: none;
+}
+
+
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .locations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .locations-section {
+    padding: 50px 15px;
+  }
+
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card-header {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .locations-section {
+    padding: 40px 12px;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .card-body li {
+    font-size: 13px;
+  }
+}

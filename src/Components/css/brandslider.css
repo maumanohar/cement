@@ -1,9 +1,9 @@
+
 .brands-section {
   padding: 90px 20px;
   text-align: center;
   background: #f9fafc;
 }
-
 
 .brands-section h2 {
   font-size: 32px;
@@ -14,7 +14,6 @@
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
-
 
 .brands-section h2::after {
   content: "";
@@ -28,82 +27,104 @@
   border-radius: 10px;
 }
 
-
 .brands-subtitle {
   max-width: 700px;
-  margin: 30px auto 0;
+  margin: 30px auto 60px;
   font-size: 16px;
   color: #666;
   line-height: 1.7;
 }
 
 
-@media (max-width: 768px) {
-  .brands-section h2 {
-    font-size: 28px;
-  }
-
-  .brands-subtitle {
-    font-size: 14px;
-  }
-}
-
-
 
 .brands-slider {
   overflow: hidden;
-  position: relative;
   width: 100%;
-  
+  position: relative;
 }
-
 
 .brands-track {
   display: flex;
-  width: calc(250px * 10);
-  animation: scroll 25s linear infinite;
+  width: max-content; /* important */
+  animation: scroll 30s linear infinite;
 }
 
-
 .brand-card {
-  width: 250px;
+  flex: 0 0 auto;
+  width: 220px;
   height: 120px;
+  margin: 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  margin: 0 10px;
   background: #fff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .brand-card img {
-  max-width: 180px;
+  max-width: 160px;
   max-height: 80px;
   object-fit: contain;
 }
 
 
+
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(calc(-200px * 5));
+  to {
+    transform: translateX(-50%);
   }
 }
-
 
 .brands-slider:hover .brands-track {
   animation-play-state: paused;
 }
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .brand-card {
+    width: 180px;
+    height: 100px;
+    margin: 0 10px;
   }
 
-  .about-content ul {
-    list-style-position: inside;
-    padding-left: 0;
+  .brand-card img {
+    max-width: 130px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .brands-section {
+    padding: 60px 15px;
+  }
+
+  .brands-section h2 {
+    font-size: 24px;
+  }
+
+  .brands-subtitle {
+    font-size: 14px;
+  }
+
+  .brand-card {
+    width: 150px;
+    height: 90px;
+    margin: 0 8px;
+  }
+
+  .brand-card img {
+    max-width: 110px;
   }
 }

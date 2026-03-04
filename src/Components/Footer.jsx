@@ -31,14 +31,14 @@ const Footer = () => {
 
             <li>
               <NavLink to="/about" onClick={() => setMenuOpen(false)}>
-                About
+                 Products
               </NavLink>
             </li>
 
 
             <li>
             <NavLink to="/products" onClick={() => setMenuOpen(false)}>
-              Products
+             About
             </NavLink>
           </li>
            <li>
