@@ -53,21 +53,22 @@
 .card-header {
   padding: 18px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .cement .card-header {
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  background: linear-gradient(0deg, #487d93,#c7eeff);
 }
 
 .tiles .card-header {
-  background: linear-gradient(135deg, #28a745, #1e7e34);
+  background: linear-gradient(0deg, #9BC264, #b9e0b1 );
 }
 
 .steel .card-header {
-  background: linear-gradient(135deg, #dc3545, #a71d2a);
+  background: linear-gradient(0deg, #91333d, #e2a4aa );
 }
 
 .card-body {

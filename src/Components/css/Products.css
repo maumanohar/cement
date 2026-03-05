@@ -133,11 +133,15 @@
   }
 
   .product-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .product-card img {
-    height: 160px;
+    height: 140px;
+  }
+
+  .product-card h3 {
+    font-size: 14px;
   }
 }
