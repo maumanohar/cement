@@ -1,10 +1,9 @@
 import React,{useState} from "react";
-import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import "./css/footer.css";
 
 const Footer = () => {
-   const [menuOpen, setMenuOpen] = useState(false);
+   const [setMenuOpen] = useState(false);
   return (
     <footer className="footer">
       <div className="footer-container">

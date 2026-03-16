@@ -11,14 +11,14 @@ function About() {
     window.location.href = "tel:+91 8333940011";
   };
 
-  const handleLocationClick = (e) => {
-    e.preventDefault();
-    window.open(
-      "https://maps.app.goo.gl/tAmwtS2TX8KuXaX29",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  };
+  // const handleLocationClick = (e) => {
+  //   e.preventDefault();
+  //   window.open(
+  //     "https://maps.app.goo.gl/tAmwtS2TX8KuXaX29",
+  //     "_blank",
+  //     "noopener,noreferrer"
+  //   );
+  // };
 
   return (
     <div >
